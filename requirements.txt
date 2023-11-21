@@ -1,0 +1,9 @@
+
+requests
+urllib3==1.26.15
+beautifulsoup4
+pandas
+response
+lxml
+tqdm
+openpyxl

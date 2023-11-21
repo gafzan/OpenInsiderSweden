@@ -4,7 +4,7 @@ from io import BytesIO
 import pandas as pd
 import requests
 
-from .constants import SHORT_POSITIONS_BASE_URL
+from constants import SHORT_POSITIONS_BASE_URL
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"

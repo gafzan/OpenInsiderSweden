@@ -1,4 +1,19 @@
+"""utils.py"""
+
 from datetime import date
+from dateutil import parser
+
+
+def handle_date(_date: {str, date, None}) -> {date, None}:
+    """
+    Returns a date and parses the input if it is a str
+    :param _date: str, date, None
+    :return: date
+    """
+    if isinstance(_date, str):
+        return parser.parse(_date).date()
+    else:
+        return _date
 
 
 def date_from_string(date_string: str) -> date:
